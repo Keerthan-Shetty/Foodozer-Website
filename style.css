@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#preloader{
+    background: #fff url('Preloader-foodozer/loader.gif') center no-repeat;
+    background-size: 40%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar-brand span{
+    font-size: 30px;
+}
+.nav-item{
+    padding: 10px;
+}
+
+/* part1 */
+.part1{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.content h6{
+    color: grey;
+}
+.quick select{
+    width: 80%;
+    height:42px;
+    border-radius: 5px;
+}
+.locate input{
+    width: 100%;
+    height: 42px;
+}
+.card-sort .card1{
+    background: #fff;
+    border: solid #fff;
+    width: 100px;
+    height: 40%;
+    padding:20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 5px;
+    box-shadow: 3px 3px 6px 0;
+}
+.card-wrapper{
+    display: flex;
+}
+.part1 .carousel-control-prev{
+    left: -6%;
+}
+.part1 .carousel-control-next{
+    right: -6%;
+}
+@media (max-width:980px){
+    .quick select{
+        width: 100%;
+    }
+    .part1 .carousel-control-prev{
+        left: -3%;
+    }
+    .part1 .carousel-control-next{
+        right: -3%;
+    }
+}
+@media (max-width:580px){
+    .quick select{
+        width: 100%;
+    }
+    .part1{
+        text-align: center;
+    }
+    .card1{
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+        margin: 20px;
+        box-shadow: 3px 3px 6px 0;
+    }
+}
+.mover{
+    margin-top: 10px;
+}
+.mover img{
+    width: 100%;
+    height: 10%;
+}
+
+/* part2 */
+.part2{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #d0c0c0b8;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.img{
+    position: relative;
+}
+.content3{
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    left: 3%;
+}
+.tag{
+    position: absolute;
+    color:#000;
+    border: solid transparent;
+    padding: 5px;
+    height: 5vh;
+    background-color: #fff9;
+    top: 7%;
+    left: 3%;
+}
+@media (max-width:980px){
+    .box img{
+        margin-top: 10px;
+    }
+    .tag{
+        top: 10%;
+    }
+}
+
+/* part3 */
+.part3{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.heading{
+    text-align: center;
+    padding-top: 24px;
+}
+.card-wrap{
+    display: flex;
+}
+.price-duration{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: calc(100%/4);
+    margin: 10px;
+}
+.card img{
+    height: 48%;
+}
+.brands .carousel-control-prev-icon,.carousel-control-next-icon{
+    background-color: #000;
+    border-radius: 50%;
+}
+.brands .carousel-control-prev{
+    left: -7%;
+}
+.brands .carousel-control-next{
+    right: -7%;
+}
+@media (max-width:980px){
+    .brands .carousel-control-prev{
+        left: -5%;
+    }
+    .brands .carousel-control-next{
+        right: -5%;
+    }
+}
+@media (max-width:580px){
+    .brands .card:not(:first-child){
+        display: none;
+    }
+    .brands .card{
+        width: 100%;
+        height: 100%;
+    }   
+    .card img{
+        height: 48%;
+    }
+    .brands .carousel-control-prev{
+        left: -3%;
+    }
+    .brands .carousel-control-next{
+        right: -3%;
+    }
+}
+
+/* part4 */
+.part4{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.account h5{
+    text-align: center;
+    border: solid transparent;
+    background-color: #00800080;
+    padding: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+.account a{
+    text-decoration: none;
+    color: #fff;
+}
+.account a:hover{
+    color: #000;
+}
+@media (max-width:580px){
+    .account h5{
+        width: 100%;
+        margin-left: 0;
+    } 
+}
+
+/* part5 */
+.part5{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.search{
+    display: flex;
+}
+.email input{
+    height: 50px;
+    width: 100%;
+    border-radius:5px 0 0 5px;
+    padding: 5px;
+}
+.button button{
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: red;
+    border: red;
+    color:#fff;
+    border-radius: 0 5px 5px 0;
+}
+@media (max-width:580px){
+    .part5{
+        text-align: center;
+    }
+    .newsletter, .about, .aboutoe, .forfoodies{
+        margin-top: 20px;
+    }
+}
+
+/* part6 */
+.part6{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #000000a9;
+}
+.food, .States{
+    color: silver;
+}
+
+/* footer */
+footer{
+    background-color: rgb(128 128 128 / 10%);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}

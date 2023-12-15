@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="keerthanshetty">
+    <link rel="icon" type="image/x-icon" href="Foodozer-img/Capture.png">
+    <title>Foodozer</title>
+    <link rel="stylesheet" href="style.css">
+    <script  src="Foodozer.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+      <!-- Preloader -->
+
+    <div id="preloader"></div>
+
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Foodozer-img/Capture.png" alt="logo"
+                    style="width: 40px;height: 40px;"><span><b>Foodozer</b></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20%;">
+                <ul class="navbar-nav  " style="text-align: center;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-percent"></i> Offers <span
+                                class="badge bg-danger">New</span></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Restaurant</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Listing</a></li>
+                            <li><a class="dropdown-item" href="#">Detail + Cart</a></li>
+                            <li><a class="dropdown-item" href="#">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Trackorder</a></li>
+                            <li><a class="dropdown-item" href="#">Invoice</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" href="#">404</a></li>
+                            <li><a class="dropdown-item" href="#">Extra :)</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="Foodozer-img/Capture1.JPG" alt="acc"
+                                style="width: 35px;height: 35px;border-radius: 50%;border: 4px solid #bc11116b;"> My
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><span style="color: rgba(0, 128, 0, 0.868);"><i
+                                            class="fa-solid fa-shop"></i> Orders</a></span></li>
+                            <li><a class="dropdown-item" href="#"><span style="color: rgba(0, 128, 0, 0.868);"><i
+                                            class="fa-solid fa-percent"></i> Offers</a></span></li>
+                            <li><a class="dropdown-item" href="#"><span style="color: rgba(0, 128, 0, 0.868);"><i
+                                            class="fa-solid fa-heart"></i> Favourites</a></span></li>
+                            <li><a class="dropdown-item" href="#"><span style="color: rgba(0, 128, 0, 0.868);"><i
+                                            class="fa-solid fa-credit-card"></i> Payments</a></span></li>
+                            <li><a class="dropdown-item" href="#"><span style="color:rgba(0, 128, 0, 0.868);"><i
+                                            class="fa-solid fa-location-dot"></i> Addresses</a></span></li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-basket-shopping"></i> Cart <span class="badge bg-secondary">5</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="part1 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="content">
+                    <h1><b>Find Awesome Deals</b> in India</h1>
+                    <h6>List of top Restaurants,Cafes,pubs and bars throughout your state</h6>
+                    <br>
+                    <br>
+                    <div class="searchbox">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <h5 class="quick dropdown">
+                                    <select name="search-quick" id="search-quick">
+                                        <option value="'nothing'"><span style="color: #000;"> Quick searches</span>
+                                        </option>
+                                        <option value="'Breakfast'">Breakfast</option>
+                                        <option value="'Brunch'">Brunch</option>
+                                        <option value="'Lunch'">Lunch</option>
+                                        <option value="'Evening snacks'">Evening snacks</option>
+                                        <option value="'Dinner'">Dinner</option>
+                                    </select>
+
+                                </h5>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="locate">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" id="form-control" type="search"
+                                            placeholder="Enter your location" aria-label="Search">
+                                        <button class="btn btn-outline" type="submit"
+                                            style="color: #fff;background-color: orange;">Search</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <h6>Eg.Beverages,Pizzas,Desserts,
+                        Contienantal,etc.</h6>
+
+                    <div class="card-sort">
+                        <div id="carouselExampleControls" class="carousel slide d-none d-sm-block"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/delicious-indian-food-tray.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Indian</h6>
+                                                <p>956</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/baked-chicken-wings-asian-style-tomatoes-sauce-plate.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">French</h6>
+                                                <p>78</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/ella-olsson-fxJTl_gDh28-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Soup</h6>
+                                                <p>956</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Chinese</h6>
+                                                <p>456</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/christina-rumpf-gUU4MF87Ipw-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Veg</h6>
+                                                <p>566</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Soup</h6>
+                                                <p>340</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/lum3n-Ngy0B2YWalk-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Italian</h6>
+                                                <p>388</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/tamas-szabo-WiVyrpzmFO8-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Desert</h6>
+                                                <p>1056</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/delicious-indian-food-tray.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Indian</h6>
+                                                <p>956</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/baked-chicken-wings-asian-style-tomatoes-sauce-plate.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">French</h6>
+                                                <p>78</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/ella-olsson-fxJTl_gDh28-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Soup</h6>
+                                                <p>956</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Chinese</h6>
+                                                <p>456</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/christina-rumpf-gUU4MF87Ipw-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Veg</h6>
+                                                <p>566</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Soup</h6>
+                                                <p>340</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/lum3n-Ngy0B2YWalk-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Italian</h6>
+                                                <p>388</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/tamas-szabo-WiVyrpzmFO8-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Desert</h6>
+                                                <p>1056</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/delicious-indian-food-tray.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Indian</h6>
+                                                <p>956</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/baked-chicken-wings-asian-style-tomatoes-sauce-plate.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">French</h6>
+                                                <p>78</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/ella-olsson-fxJTl_gDh28-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Soup</h6>
+                                                <p>956</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Chinese</h6>
+                                                <p>456</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/christina-rumpf-gUU4MF87Ipw-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Veg</h6>
+                                                <p>566</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg"
+                                                alt="img" style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Korean</h6>
+                                                <p>340</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/lum3n-Ngy0B2YWalk-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Italian</h6>
+                                                <p>388</p>
+                                            </div>
+                                        </div>
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/tamas-szabo-WiVyrpzmFO8-unsplash.jpg" alt="img"
+                                                style="width: 45px;height: 45px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h6 style="color: red;">Desert</h6>
+                                                <p>1056</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev " type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"
+                                    style="background-color:#000;border-radius:50%;"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next" style="height: 19vh;">
+                                <span class="carousel-control-next-icon" aria-hidden="true"
+                                    style="background-color:#000;border-radius:50%"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-sort1">
+                        <div id="carouselExampleControls" class="carousel slide d-sm-none" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/delicious-indian-food-tray.jpg" alt="img"
+                                                style="width: 150px;height: 150px;border-radius: 50%;"><br><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">Indian</h2>
+                                                <h4>956</h4>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="card1 text-center">
+                                                <img src="Foodozer-img/baked-chicken-wings-asian-style-tomatoes-sauce-plate.jpg"
+                                                    alt="img" style="width: 150px;height:150px;border-radius: 50%;"><br>
+                                                <div class="content2">
+                                                    <h2 style="color: red;">American</h2>
+                                                    <h4>78</h4>
+                                                </div>
+                                            </div> -->
+                                        <!-- <div class="card1 text-center">
+                                                <img src="Foodozer-img/ella-olsson-fxJTl_gDh28-unsplash.jpg" alt="img"
+                                                    style="width: 150px;height: 150px;border-radius: 50%;"><br>
+                                                <div class="content2">
+                                                    <h2 style="color: red;">Vegetarian</h2>
+                                                    <h4>956</h4>
+                                                </div>
+                                            </div> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/ella-olsson-fxJTl_gDh28-unsplash.jpg"
+                                                alt="img"
+                                                style="width: 150px;height: 150px;border-radius: 50%;"><br><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">Soup</h2>
+                                                <h4>340</h4>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="card1 text-center">
+                                                <img src="Foodozer-img/lum3n-Ngy0B2YWalk-unsplash.jpg" alt="img"
+                                                    style="width: 150px;height: 150px;border-radius: 50%;"><br>
+                                                <div class="content2">
+                                                    <h2 style="color: red;">Italian</h2>
+                                                    <h4>388</h4>
+                                                </div>
+                                            </div> -->
+                                        <!-- <div class="card1 text-center">
+                                                <img src="Foodozer-img/tamas-szabo-WiVyrpzmFO8-unsplash.jpg" alt="img"
+                                                    style="width: 150px;height: 150px;border-radius: 50%;"><br>
+                                                <div class="content2">
+                                                    <h2 style="color: red;">Desert</h2>
+                                                    <h4>1056</h4>
+                                                </div>
+                                            </div> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg" alt="img"
+                                                style="width: 150px;height: 150px;border-radius: 50%;"><br><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">Chinese</h2>
+                                                <h4>456</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/christina-rumpf-gUU4MF87Ipw-unsplash.jpg" alt="img"
+                                                style="width: 150px;height: 150px;border-radius: 50%;"><br><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">Vegetarian</h2>
+                                                <h4>566</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/tamas-szabo-WiVyrpzmFO8-unsplash.jpg" alt="img"
+                                                style="width: 150px;height: 150px;border-radius: 50%;"><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">Desert</h2>
+                                                <h4>1056</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/baked-chicken-wings-asian-style-tomatoes-sauce-plate.jpg"
+                                                alt="img" style="width: 150px;height:150px;border-radius: 50%;"><br><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">American</h2>
+                                                <h4>78</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/tamas-szabo-WiVyrpzmFO8-unsplash.jpg" alt="img"
+                                                style="width: 150px;height: 150px;border-radius: 50%;"><br><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">Desert</h2>
+                                                <h4>1056</h4>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/lum3n-Ngy0B2YWalk-unsplash.jpg" alt="img"
+                                                style="width: 150px;height: 150px;border-radius: 50%;"><br><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">Italian</h2>
+                                                <h4>388</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-wrapper">
+                                        <div class="card1 text-center">
+                                            <img src="Foodozer-img/ella-olsson-fxJTl_gDh28-unsplash.jpg" alt="img"
+                                                style="width: 150px;height: 150px;border-radius: 50%;"><br><br>
+                                            <div class="content2">
+                                                <h2 style="color: red;">Vegetarian</h2>
+                                                <h4>956</h4>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="card1 text-center">
+                                                <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg" alt="img"
+                                                    style="width: 150px;height: 150px;border-radius: 50%;"><br>
+                                                <div class="content2">
+                                                    <h2 style="color: red;">Chinese</h2>
+                                                    <h4>456</h4>
+                                                </div>
+                                            </div> -->
+                                        <!-- <div class="card1 text-center">
+                                                <img src="Foodozer-img/christina-rumpf-gUU4MF87Ipw-unsplash.jpg" alt="img"
+                                                    style="width: 150px;height: 150px;border-radius: 50%;"><br>
+                                                <div class="content2">
+                                                    <h2 style="color: red;">Vegetarian</h2>
+                                                    <h4>566</h4>
+                                                </div>
+                                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"
+                                    style="background-color:#000;border-radius:50%;"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"
+                                    style="background-color:#000;border-radius:50%;"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="mover">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide bg-secondary" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foodozer-img/poster1.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foodozer-img/poster2.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foodozer-img/poster3.jpg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="part2">
+    <div class="container">
+        <div class="row">
+            <div class=" car1 col-md-6 col-lg-3 col-sm-12">
+                <div class="box">
+                    <div class="img">
+                        <img src="Foodozer-img/rachel-coyne-U7HLzMO4SIY-unsplash.jpg" alt="img">
+
+                        <div class="content3">
+                            <h5><b>UP TO 50% OFF</b></h5>
+                            <p>OFFERS THAT BRIGTEN YOUR DAY </p>
+                        </div>
+                        <div class="tag">
+                            <p><b>OFFER</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car1 col-sm-12  col-lg-3 col-md-6">
+                <div class="box">
+                    <div class="img">
+                        <img src="Foodozer-img/nathan-anderson-L95xDkSSuWw-unsplash.jpg" alt="img">
+                        <div class="content3">
+                            <h5><b>YOUR FAVOURITE <br>FOOD FROM ALL <br>NEW RESTAURANTS!</b></h5>
+                        </div>
+                        <div class="tag">
+                            <p><b>DISCOVER</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car1 col-sm-12 col-lg-3 col-md-6">
+                <div class="box">
+                    <div class="img">
+                        <img src="Foodozer-img/ju-guan-D-jLxBtEwaA-unsplash.jpg" alt="img">
+                        <div class="content3">
+                            <h5><b>ENJOY EXPRESS <br>DELIVERY FROM <br>EATERIES NEAR YOU!</b></h5>
+                        </div>
+                        <div class="tag">
+                            <p><b>TRY NOW</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car1 col-sm-12 col-lg-3 col-md-6">
+                <div class="box">
+                    <div class="img">
+                        <img src="Foodozer-img/customer-experience-creative-collage.jpg" alt="img">
+                        <div class="content3">
+                            <h5><b>TOP PICKS!</b></h5>
+                            <p>HIGHEST RATED EATERIES NEAR YOU</p>
+                        </div>
+                        <div class="tag">
+                            <p><b>EXPLORE</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="part3 bg-light">
+    <div class="heading">
+        <h1>Popular Brands</h1>
+        <p>Top Restaurants,Cafes,pubs and bars in chennai,based on trends <br>
+            <i class="fa fa-minus" style="font-size: 60px;color: green;"></i>
+        </p>
+    </div>
+    <div class="container">
+        <div class="brands">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-wrap">
+                            <div class="card">
+                                <img src="Foodozer-img/breakfast-with-fried-eggs-sausage-ham-pan-with-tomatoes-chili-basil.jpg"
+                                    class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="Foodozer-img/lucas-andrade-3Uj0GwVmOeY-unsplash.jpg" class="card-img-top"
+                                    alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="Foodozer-img/stack-pancakes-with-syrup-berries-top.jpg" class="card-img-top"
+                                    alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="Foodozer-img/salad-from-tomatoes-cucumber-red-onions-lettuce-leaves-healthy-summer-vitamin-menu-vegan-vegetable-food-vegetarian-dinner-table-top-view-flat-lay.jpg"
+                                    class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrap">
+                            <div class="card" style="height: 30%;">
+                                <img src="Foodozer-img/christina-rumpf-gUU4MF87Ipw-unsplash.jpg" class="card-img-top"
+                                    alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card" style=" height: 30%;">
+                                <img src="Foodozer-img/tamas-szabo-WiVyrpzmFO8-unsplash.jpg" class="card-img-top"
+                                    alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card" style="height: 30%;">
+                                <img src="Foodozer-img/baked-chicken-wings-asian-style-tomatoes-sauce-plate.jpg"
+                                    class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card" style="height: 30%;">
+                                <img src="Foodozer-img/ilya-mashkov-_qxbJUr9RqI-unsplash.jpg" class="card-img-top"
+                                    alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrap">
+                            <div class="card">
+                                <img src="Foodozer-img/vernon-raineil-cenzon-G6fmW79llfY-unsplash.jpg"
+                                    class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="Foodozer-img/breakfast-with-fried-eggs-sausage-ham-pan-with-tomatoes-chili-basil.jpg"
+                                    class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="Foodozer-img/lum3n-Ngy0B2YWalk-unsplash.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="Foodozer-img/side-view-baked-chicken-with-cucumber-lemon-seasoning-bread-table.jpg"
+                                    class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h3 class="card-title">World famous</h5>
+                                        <p class="card-text">North Indian.American.Non-veg</p>
+                                        <div class="price-duration">
+                                            <div class="duration">
+                                                <p class="badge" style="background-color:brown;"><i
+                                                        class="fa-solid fa-clock"></i> 25-30 mins</p>
+                                            </div>
+                                            <div class="price">
+                                                <p><i class="fa-solid fa-indian-rupee-sign"></i>450 FOR TWO</p>
+                                            </div>
+                                        </div>
+                                        <p><span class="badge" style="background-color: green;">OFFER</span>65%
+                                            off|Usecoupon STAR60</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="part4">
+    <div class="container">
+        <div class="heading2">
+            <h1>Become a Member</h1>
+            <p>Join with us to taste <br>
+                <i class="fa fa-minus" style="font-size: 60px;color: green;"></i>
+            </p>
+        </div>
+        <div class="account">
+            <h5><a href=""><b>Create an account</b> <i class="fa-solid fa-chevron-right"
+                style="background-color:#fff;border: solid #fff;border-radius: 50%;color:green;padding: 10px;"></i></a>
+            </h5>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h5>Operate Food stores or Restaurant?<span style="color: red;"> Work with us.</span></h5>
+    </div>
+</section>
+<section class="part5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="newsletter">
+                    <h5><b>SUBSCRIBE TO OUR NEWSLETTER</b></h5>
+                    <br>
+                    <div class="search">
+                        <div class="email">
+                            <input type="email" class="news" id="news" placeholder="Please enter your Email">
+                        </div>
+                        <div class="button">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                    <br>
+                    <p>Register now to get updates on<span style="color:red"> Coupons and Offers</span></p>
+                    <p>DOWNLOAD NOW</p>
+                    <div class="app">
+                        <img src="Foodozer-img/en_badge_web_generic.png" alt="img" style="width: 150px;height:60px;">
+                        <img src="Foodozer-img/Capture5.JPG" alt="img"
+                            style="width: 130px;height:40px;border-radius: 5px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="about">
+                    <h5><b>ABOUT OE</b></h5>
+                    <br>
+                    <div class="list">
+                        <p style="color: grey;font-size: 15px;">About us</p>
+                        <p style="color: grey;font-size: 15px;">Blog</p>
+                        <p style="color: grey;font-size: 15px;">Career</p>
+                        <p style="color: grey;font-size: 15px;">Culture</p>
+                        <p style="color: grey;font-size: 15px;">Contact</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="forfoodies">
+                    <h5><b>FOR FOODIES</b></h5>
+                    <br>
+                    <div class="list">
+                        <p style="color: grey;font-size: 15px;">Community</p>
+                        <p style="color: grey;font-size: 15px;">Developers</p>
+                        <p style="color: grey;font-size: 15px;">Blogger Help</p>
+                        <p style="color: grey;font-size: 15px;">Verified Users</p>
+                        <p style="color: grey;font-size: 15px;">Code of Conduct</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="about">
+                    <h5><b>FOR RESTAURANTS</b></h5>
+                    <br>
+                    <div class="list">
+                        <p style="color: grey;font-size: 15px;">Advertise</p>
+                        <p style="color: grey;font-size: 15px;">Add a Restaurant</p>
+                        <p style="color: grey;font-size: 15px;">Claim your listing</p>
+                        <p style="color: grey;font-size: 15px;">For Businesses</p>
+                        <p style="color: grey;font-size: 15px;">Owner Guidelines</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="part6">
+    <div class="container">
+        <div class="row">
+            <div class="state-food">
+                <div class="col-md-12 col-sm12">
+                    <div class="State">
+                        <h5><b>Popular States & Country</b></h5>
+                        <div class="States">
+                            <p style="text-transform: capitalize;">tamilnadu | kerala | andhra | telugana | karanataka |
+                                maharastra | Puducherry | gujarat | uttarpradesh | jammu&kashmir | punjab | rajasatan |
+                                Delhi | harayana | uttarkhand | madhyapradesh | nagaland | westbengal | tripura |
+                                arunachal pradesh | sikkim | bihar | megalaya | jharkhand | goa | mizohram | oddisha |
+                                assam | chattisgarh | america | spain | italy | mexico | china | thailand | sweden</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 col-sm12">
+                    <div class="popularfood">
+                        <h5><b>Popular Foods</b></h5>
+                        <div class="food">
+                            <p style="text-transform: capitalize;">indian | chinese | mexican | spanish | swedish |
+                                italian | american | thai | deserts | cafe | continental | punjabi | keralastyle |
+                                chettinad | streetfood | fastfood | pasteries | pizza </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <footer-bootom class="text-center">
+        <p style="color: grey;"><i class="fa-regular fa-copyright"></i> Copyright Foodozer 2023.All Rights Reserved</p>
+        <p>Made by <span style="color:red">Keerthan Shetty - Be a partner</span></p>
+    </footer-bootom>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
