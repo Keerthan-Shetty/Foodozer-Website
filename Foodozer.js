@@ -1,11 +1,23 @@
 // preloader
 
-let loader = document.getElementById("preloader");
+//code for loader with simple code
+// let loader = document.getElementById("preloader");
 
-window.addEventListener("load",function(){
-    loader.style.display= "none";    
-});
+// window.addEventListener("load",function(){
+//     loader.style.display= "none";    
+// });
 
+// timeset for preloader
+const timeoutValue = 8000; // Adjust this value as needed
+
+// Function to hide the preloader after the timeout
+function hidePreloader() {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+}
+setTimeout(hidePreloader, timeoutValue);// Set a timeout to hide the preloader
+
+//search
 let select= document.getElementById('search-quick');
 
 select.addEventListener('change',function(){
