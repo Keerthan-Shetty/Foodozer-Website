@@ -21,11 +21,22 @@
     }
 }
 
+.navbar{
+    box-shadow: 10px 10px 10px silver;
+}
 .navbar-brand span{
     font-size: 30px;
 }
 .nav-item{
     padding: 10px;
+}
+@media(max-width:850px) {
+    #navbarSupportedContent {
+        background-color: #00000076;
+    }
+    #navbarSupportedContent ul li a {
+        color: #fff;
+    }
 }
 
 /* part1 */
