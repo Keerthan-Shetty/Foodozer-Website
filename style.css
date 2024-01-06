@@ -1,10 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+ 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #preloader{
@@ -15,7 +15,7 @@
     position: fixed;
     z-index: 100;
 }
-@media (max-width:530px){
+@media (max-width:760px){
     #preloader{
         background-size: 100%;
     }
@@ -244,6 +244,8 @@
 }
 .search{
     display: flex;
+    justify-content: center;
+}
 }
 .email input{
     height: 50px;
